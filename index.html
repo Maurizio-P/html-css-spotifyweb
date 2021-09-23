@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,800;0,900;1,100;1,200;1,500;1,800;1,900&display=swap"
-    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Spotiboo</title>
@@ -14,21 +15,128 @@
         <div class="navbar-container">
             <div class="navbar">
                 <div class="navbar-icon-top">
-                    <img src="img/logo-small.svg" alt="logo-small">
-                    
+                    <ul>
+                        <li><a href=""><img src="img/logo-small.svg" alt="logo"></a></li>
+                        <li><a href=""><img src="img/home.svg" alt="home"> <span class="ds-none420">Home</span></a></li>
+                        <li><a href=""><img src="img/search.svg" alt="search"> <span class="ds-none420">Search</span></a></li>
+                        <li><a href=""><img src="img/libreria.svg" alt="libreria"> <span class="ds-none420">Libreria</span></a></li>
+                    </ul>
+
                 </div>
-                <div class="navbar-playlist"></div>
-                <div class="navbar-icon-bottom"></div>
+                <div class="navbar-playlist">
+                    <div class="new-playlist-cont ds-none420">
+                        <h3>Playlist</h3>
+                        <div class="new-playlist">
+                            <div class="new-playlist-icon">
+                                <a href=""><i class="fas fa-plus"></i></a> 
+                            </div>
+                            <span class="ds-none420">Crea playlist</span>
+                        </div>
+
+                        <ul>
+                            <li><a href="">Nome playlist</a></li>
+                            <li><a href="">Nome playlist</a></li>
+                            <li><a href="">Nome playlist</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="navbar-icon-bottom">
+                    <ul>
+                        <li>
+                            <div class="download-icon">
+                                <a href=""><img src="img/download.svg" alt="download"></a> 
+                            </div>
+                            <a href=""><span class="ds-none420">Scarica app</span></a></li>
+                        </li>
+                        
+                        <li>
+                            <div class="profile-pic">
+                                <a href=""><img src="img/profile.svg" alt="profile"></a> 
+                            </div>
+                            <a href=""><span class="ds-none420">Jonh Wick</span></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
 
         <div class="container-content">
-            <div class="upgrade-section"></div>
-            <div class="link-section"></div>
-            <section></section>
+            <div class="upgrade-section">
+                <a class="upgrade-button" href="">EFFETTUA L'UPGRADE</a>
+            </div>
+            <div class="link-section">
+                <ul class="link">
+                    <li class="link-list-item">
+                        <a href="">In evidenza</a>
+                        <div class="accent"></div> 
+                    </li>
+                    <li><a href="">Podcast</a></li>
+                    <li><a href="">Classifiche</a></li>
+                    <li><a href="">Generi e mood</a></li>
+                    <li><a href="">Nuove uscite</a></li>
+                    <li><a href="">Scopri</a></li>
+                </ul>
+            </div>
+            <section>
+                <h3>Nome sezione</h3>
+                <div class="album-container">
+                    <div class="album-card">
+                        <div class="album-cover">
+                            <img src="img/stranger.jpeg" alt="stranger">
+                        </div>
+                        <div class="album-name">
+                            <h4>Nome album</h4>
+                            <h5>Nome artista</h5>
+                        </div>
+                    </div>
+                    
+                    <div class="album-card">
+                        <div class="album-cover">
+                            <img src="img/stranger.jpeg" alt="stranger">
+                        </div>
+                        <div class="album-name">
+                            <h4>Nome album</h4>
+                            <h5>Nome artista</h5>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
-    <div class="container-bottom"></div>
+    <div class="container-bottom">
+        <div class="action-bar-container">
+            <div class="listening-container">
+                <div class="listening-cover-album">
+                    <img src="img/youg.jpeg" alt="">
+                </div>
+                <div class="listening-name-singer">
+                    <h5>Breaking</h5>
+                    <h6>Linkin Park</h6>
+                </div>
+                <div class="listening-tools">
+                    <i class="far fa-heart"></i> <i class="far fa-folder-open"></i> 
+                </div>
+            </div>
+            <div class="player-container">
+                <div class="player-button">
+                    <i class="fas fa-random"></i> <i class="fas fa-backward"></i> <i class="fas fa-play"></i> <i class="fas fa-forward"></i> <i class="fas fa-redo-alt"></i>
+                </div>
+                <div class="player-slide-container">
+                    1.25
+                    <div class="player-slide">
+                        <div class="player-slide-progress"></div>
+                    </div>
+                    3.17
+                </div>
+            </div>
+            <div class="tools-container ds-none420">
+                <div class="tools-button"><i class="fas fa-list"></i> <i class="fas fa-desktop"></i> <i class="fas fa-volume-up"></i></div>
+                <div class="volume-slide">
+                    <div class="volume-slide-level"></div>
+                </div>
+            </div>
+        </div>
+    </div>
     
 </body>
 </html>
