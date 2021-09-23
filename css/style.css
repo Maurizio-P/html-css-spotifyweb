@@ -224,17 +224,38 @@ body {
  /* section */
 
 .container-content section {
-    height: calc(100% - 70px);
+    height: calc(100vh - 70px);
     overflow: hidden;
+    background-color: #141922;
+}
+
+.container-content section h3 {
+    padding: 10px 0;
+    color: white;
+}
+
+.scroll-container {
+    height: 100%;
+    overflow: auto;
 }
 
 .album-container {
-    height: 100%;
-    overflow: auto;
     display: flex;
-    flex-wrap: wrap;
     gap: 8px;
+    flex-wrap: wrap;
+    text-align: center;
+    color: white;
 }
+
+.album-container h5 {
+    color: #878787;
+}
+
+
+.album-card {
+    width: calc(100% / 2 - 4px);
+}
+
 
 .album-cover img {
     width: 100%;
