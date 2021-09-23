@@ -223,8 +223,22 @@ body {
 
  /* section */
 
-   
+.container-content section {
+    height: calc(100% - 70px);
+    overflow: hidden;
+}
 
+.album-container {
+    height: 100%;
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.album-cover img {
+    width: 100%;
+}
 
 /* utili */
 
