@@ -1,0 +1,52 @@
+.album-card:hover .album-cover::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.album-card:hover .album-cover::before {
+    font-family: "Font Awesome 5 Free"; 
+    content: "\f144";
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.navbar a:hover,
+.listening-tools a:hover i,
+.link-section a:hover {
+    color: white;
+}
+
+.player-slide:hover .player-slide-progress,
+.volume-slide:hover .volume-slide-level{
+    background-color: #1DB954;
+}
+
+.player-slide:hover::after,
+.volume-slide:hover::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    left: 40%;
+    top: -5px;
+    transform: translate(-50%);
+}
+
+.fa-play:hover, 
+.upgrade-button:hover {
+    transform: scale(1.4);
+}
+
+.upgrade-button:hover {
+    transform: translateX(-40px) scale(1.2);
+}
